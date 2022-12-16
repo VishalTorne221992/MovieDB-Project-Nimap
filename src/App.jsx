@@ -1,5 +1,5 @@
 import React, { useEffect, useCallback } from 'react'
-import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import { HashRouter, Route, Routes } from 'react-router-dom'
 import { useState } from 'react'
 import './App.css'
 import MovieBox from './MovieBox'
@@ -14,7 +14,7 @@ import { MovieContextProvider } from './Contexts/MovieContext'
 function App() {
 
   return (
-    <BrowserRouter>
+    <HashRouter>
     
 
         <HomeNavBar />
@@ -28,7 +28,7 @@ function App() {
 
         </Routes>
         
-        </BrowserRouter>
+        </HashRouter>
     
   )
 
