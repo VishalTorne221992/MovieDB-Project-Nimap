@@ -84,10 +84,6 @@
 
 @media (min-width: 360px) {
 
-    body {
-        overflow: scroll;
-    }
-
     .MovieDetailsContainer {
         height: 18rem;
         overflow: hidden;

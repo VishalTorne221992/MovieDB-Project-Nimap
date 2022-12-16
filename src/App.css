@@ -179,7 +179,7 @@ img {
 
 }
 
-@media screen and (min-width: 321px) and (max-width: 479px) {
+@media screen and (min-width: 321px) and (max-width: 425px) {
 
   body{
     overflow: scroll;
@@ -187,9 +187,10 @@ img {
 
   .Navbar {
     display: flex;
+    flex-direction: column;
     color: white;
     background-color: black;
-    height: 11vh;
+    height: 16vh;
     align-items: center;
     width: 100vw;
 
@@ -202,21 +203,22 @@ img {
   .Rightside {
     display: flex;
     width: 100%;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
-    margin: auto;
+    margin: 0;
     color: whitesmoke;
     overflow: visible;
     font-size: 0.8rem;
-    gap:2px;
+    gap:6px;
     flex-basis: 0;
+    position: static;
   }
   
   input {
-    width: 20vw;
-    height: 30px;
-    padding: 18px;
-    border-radius: 8px;
+    width: 26vw;
+    height: 25px;
+    padding: 7px;
+    border-radius: 5px;
   }
   
   .buttonLink {
@@ -228,7 +230,7 @@ img {
   
     display: grid;
     grid-template-columns: repeat(2, 150px);
-    margin: 2vw auto auto 5vw;
+    margin: 2vw auto auto 1vw;
     gap: 35px;
   }
   
@@ -275,7 +277,7 @@ img {
   }
 }
 
-@media screen and (min-width: 480px) and (max-width: 767px){
+@media screen and (min-width: 426px) and (max-width: 767px){
 
   .Navbar {
     width: 279%;
