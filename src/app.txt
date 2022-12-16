@@ -1,0 +1,7 @@
+API Key: 4ee812b6fb59e5f8fc44beff6b8647ed
+
+https://api.themoviedb.org/3/movie/550?api_key=4ee812b6fb59e5f8fc44beff6b8647ed
+
+API img = "https://image.tmdb.org/t/p/w500/"
+
+API SEARCH = "https://api.themoviedb.org/3/search/company?api_key=c45a857c193f6302f2b5061c3b85e743&page=1"

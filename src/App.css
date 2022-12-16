@@ -1,0 +1,300 @@
+* {
+  box-sizing: border-box;
+}
+
+
+
+body {
+  margin: 0;
+  background-color: dimgray;
+}
+
+.Navbar {
+  display: flex;
+  color: white;
+  background-color: black;
+  height: 11vh;
+  align-items: center;
+  width: 100vw;
+
+
+}
+
+.logo {
+  margin: 10vw;
+}
+
+.Rightside {
+  display: flex;
+  position: relative;
+  width: 700px;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto 20px 10px 200px;
+  color: whitesmoke;
+  overflow: hidden;
+}
+
+input {
+  width: 20vw;
+  height: 30px;
+  padding: 18px;
+  border-radius: 8px;
+}
+
+.buttonLink {
+  width: 80px;
+  height: 40px;
+}
+
+.MovieList {
+
+  display: grid;
+  grid-template-columns: repeat(4, 250px);
+  margin: 2vw auto auto 8vw;
+  gap: 50px;
+}
+
+.MovieBoxes {
+  color: white;
+}
+
+img {
+  width: 240px;
+  height: 350px;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  font-size: large;
+  font-weight: bolder;
+  color: black;
+
+}
+
+
+.MovieDetailsContainer {
+  display: grid;
+  margin: 10px 50px 50px 50px;
+
+}
+
+
+.pagination {
+  display: flex;
+  margin-top: 20px;
+  color: aliceblue;
+  text-decoration: none;
+  margin: 3rem;
+}
+
+.paginationdiv {
+  border: 0.2rem solid black;
+  padding: 0.6rem;
+  background-color: teal;
+}
+
+
+@media (max-width: 320px) {
+
+  .Navbar {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    background-color: black;
+    height: 15vh;
+    width: 111vw;
+  
+  
+  }
+  
+  .logo {
+    margin: 3vw;
+  }
+  
+  .Rightside {
+
+    display: flex;
+    width: 100vw;
+    justify-content: space-between;
+    align-items: center;
+    color: whitesmoke;
+    overflow: hidden;
+    margin: 0px 0px 0px 0px;
+    position: static;
+    font-size: 0.9rem;
+
+  }
+  
+  .MovieList {
+  
+    display: grid;
+    grid-template-columns: repeat(2, 150px);
+    margin: 2vw auto auto 2vw;
+    gap: 50px;
+  }
+  
+  .MovieBoxes {
+    color: white;
+  }
+  
+  img {
+    width: 140px;
+    height: 200px;
+  }
+  
+  .pagination {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    font-size: large;
+    font-weight: bolder;
+    color: black;
+  
+  }
+  
+  
+  .MovieDetailsContainer {
+    display: grid;
+    margin: 10px 50px 50px 50px;
+  
+  }
+  
+  
+  .pagination {
+    display: flex;
+    margin-top: 20px;
+    color: aliceblue;
+    text-decoration: none;
+    margin: 3rem;
+  }
+  
+  .paginationdiv {
+    border: 0.2rem solid black;
+    padding: 0.6rem;
+    background-color: teal;
+  }
+
+}
+
+@media screen and (min-width: 321px) and (max-width: 479px) {
+
+  body{
+    overflow: scroll;
+  }
+
+  .Navbar {
+    display: flex;
+    color: white;
+    background-color: black;
+    height: 11vh;
+    align-items: center;
+    width: 123vw;
+
+  }
+  
+  .logo {
+    margin: 10vw;
+  }
+  
+  .Rightside {
+    display: flex;
+    position: relative;
+    width: 700px;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    color: whitesmoke;
+    overflow: hidden;
+  }
+  
+  input {
+    width: 20vw;
+    height: 30px;
+    padding: 18px;
+    border-radius: 8px;
+  }
+  
+  .buttonLink {
+    width: 80px;
+    height: 40px;
+  }
+  
+  .MovieList {
+  
+    display: grid;
+    grid-template-columns: repeat(2, 250px);
+    margin: 2vw auto auto 8vw;
+    gap: 50px;
+  }
+  
+  .MovieBoxes {
+    color: white;
+  }
+  
+  img {
+    width: 240px;
+    height: 350px;
+  }
+  
+  .pagination {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    font-size: large;
+    font-weight: bolder;
+    color: black;
+  
+  }
+  
+  
+  .MovieDetailsContainer {
+    display: grid;
+    margin: 10px 50px 50px 50px;
+  
+  }
+  
+  
+  .pagination {
+    display: flex;
+    margin-top: 20px;
+    color: aliceblue;
+    text-decoration: none;
+    margin: 3rem;
+  }
+  
+  .paginationdiv {
+    border: 0.2rem solid black;
+    padding: 0.6rem;
+    background-color: teal;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px){
+
+  .Navbar {
+    width: 279%;
+  }
+
+  .pagination {
+    padding-left: 400px;
+  }
+
+}
+
+@media (min-width: 768px) {
+
+  .Navbar {
+    width: 158%;
+  }
+
+  .pagination {
+    padding-left: 50px;
+  }
+
+}
+
+
+@media (min-width: 1024px) {}
