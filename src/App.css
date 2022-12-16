@@ -191,23 +191,25 @@ img {
     background-color: black;
     height: 11vh;
     align-items: center;
-    width: 123vw;
+    width: 100vw;
 
   }
   
   .logo {
-    margin: 10vw;
+    margin: 5vw;
   }
   
   .Rightside {
     display: flex;
-    position: relative;
-    width: 700px;
-    justify-content: space-between;
+    width: 100%;
+    justify-content: space-around;
     align-items: center;
     margin: auto;
     color: whitesmoke;
-    overflow: hidden;
+    overflow: visible;
+    font-size: 0.8rem;
+    gap:2px;
+    flex-basis: 0;
   }
   
   input {
@@ -218,25 +220,26 @@ img {
   }
   
   .buttonLink {
-    width: 80px;
-    height: 40px;
+    width: 55px;
+    height: 30px;
   }
   
   .MovieList {
   
     display: grid;
-    grid-template-columns: repeat(2, 250px);
-    margin: 2vw auto auto 8vw;
-    gap: 50px;
+    grid-template-columns: repeat(2, 150px);
+    margin: 2vw auto auto 5vw;
+    gap: 35px;
   }
   
   .MovieBoxes {
     color: white;
+    border: 2px solid burlywood;
   }
   
   img {
-    width: 240px;
-    height: 350px;
+    width: 145px;
+    height: 200px;
   }
   
   .pagination {
