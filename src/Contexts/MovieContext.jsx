@@ -1,5 +1,5 @@
-import React, { createContext, useCallback } from 'react'
-import { useLayoutEffect, useEffect } from 'react';
+import React from 'react'
+import { useEffect } from 'react';
 import { useReducer } from 'react'
 
 
@@ -104,7 +104,6 @@ export function MovieContextProvider({ children }) {
 
     },[])
   
-    console.log(AllPopularMovies,'AllPopularMoviesctx');
 
   return (
     <MovieContext.Provider value={{ MoviesToShow, AllPopularMovies,  MovieDetails, MovieCast, dispatch, CastImagesList }}>

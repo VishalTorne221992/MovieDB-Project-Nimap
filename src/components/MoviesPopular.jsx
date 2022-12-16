@@ -14,10 +14,8 @@ export default function MoviesPopular() {
     const { AllPopularMovies , MoviesToShow } = useContext(MovieContext)
 
     useEffect(() => {
+        
         pagecountfunc();
-        console.log(MoviesToShow.length, 'movie list');
-        console.log(pageCount, 'page count');
-        console.log(currentPage, 'currentPage')
 
     }, [MoviesToShow, currentPage])
 

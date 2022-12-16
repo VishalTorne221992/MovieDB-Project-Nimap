@@ -1,7 +1,7 @@
 import React from 'react'
 import { useEffect, useContext, useCallback } from 'react';
 import { useState } from 'react';
-import { Link, Navigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { MovieContext } from '../Contexts/MovieContext';
 import '../App.css'
 
@@ -20,8 +20,6 @@ export default function HomeNavBar() {
   useEffect(() => {
 
     setPopMovies();
-    console.log(AllPopularMovies, 'PopularMovies')
-    console.log(SearchText, 'SearchText')
 
   }, [AllPopularMovies, SearchText])
 
@@ -76,7 +74,6 @@ export default function HomeNavBar() {
     console.log(moviesearch.value, 'Movie Search values');
 
     setSearchText(moviesearch.value)
-    //moviesearch.value = '';
 
     let searchApi = `https://api.themoviedb.org/3/search/movie?api_key=4ee812b6fb59e5f8fc44beff6b8647ed&language=en-US&query=${SearchText}&page=1`
 
@@ -96,8 +93,6 @@ export default function HomeNavBar() {
 
     let moviesearch = document.getElementById('MovieNameSearch')
 
-    console.log(moviesearch.value, 'Movie Search values');
-
     setSearchText(moviesearch.value)
 
     dispatch({ type: 'MoviesToShow', payload: AllPopularMovies });
@@ -107,7 +102,6 @@ export default function HomeNavBar() {
   const handlekeydown = (e) => {
 
     if (e.key === 'Enter') {
-      console.log('Enter pressed')
 
       let moviesearch = document.getElementById('MovieNameSearch')
 
