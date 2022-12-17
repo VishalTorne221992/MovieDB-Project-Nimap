@@ -132,7 +132,7 @@ img {
   
     display: grid;
     grid-template-columns: repeat(2, 150px);
-    margin: 2vw auto auto 2vw;
+    margin: 2vw auto auto 5vw;
     gap: 50px;
   }
   
@@ -190,9 +190,10 @@ img {
     flex-direction: column;
     color: white;
     background-color: black;
-    height: 16vh;
+    height: 15vh;
     align-items: center;
     width: 100vw;
+    justify-content: flex-start;
 
   }
   
@@ -203,9 +204,9 @@ img {
   .Rightside {
     display: flex;
     width: 100%;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
-    margin: 0;
+    margin: 0px 0px 0px 50px;
     color: whitesmoke;
     overflow: visible;
     font-size: 0.8rem;
@@ -230,7 +231,7 @@ img {
   
     display: grid;
     grid-template-columns: repeat(2, 150px);
-    margin: 2vw auto auto 1vw;
+    margin: 2vw auto auto 6vw;
     gap: 35px;
   }
   
