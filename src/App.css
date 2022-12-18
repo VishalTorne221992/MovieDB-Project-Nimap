@@ -280,25 +280,12 @@ img {
 
 @media screen and (min-width: 426px) and (max-width: 767px){
 
-  .Navbar {
-    width: 279%;
-  }
-
-  .pagination {
-    padding-left: 400px;
-  }
+ 
 
 }
 
 @media (min-width: 768px) {
 
-  .Navbar {
-    width: 158%;
-  }
-
-  .pagination {
-    padding-left: 50px;
-  }
 
 }
 

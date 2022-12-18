@@ -43,7 +43,7 @@ export default function MoviesPopular() {
     }
 
     return (
-        <div className='MoviesPopular'>
+        <>
             
             <div className='MovieList'>
 
@@ -82,6 +82,6 @@ export default function MoviesPopular() {
             </div>
 
 
-        </div>
+        </>
     )
 }

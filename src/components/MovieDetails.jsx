@@ -4,10 +4,11 @@ import { useCallback } from 'react';
 import { useContext } from 'react';
 import { useEffect } from 'react';
 import { useParams } from 'react-router-dom'
-import '../App.css'
+
 import { MovieContext } from '../Contexts/MovieContext';
 import MoviesDetailsPage from './MoviesDetailsPage';
 import errimg from '../assets/prwimg.png';
+import '../carousel.css'
 
 export default function MovieDetails() {
 
@@ -60,12 +61,12 @@ export default function MovieDetails() {
 
     const handleOnError = (e) => {
         e.target.src = errimg;
-      }
+    }
 
 
     document.addEventListener('click', e => {
         e.preventDefault();
-       
+
         let handle;
         if (e.target.matches(".handle")) {
             handle = e.target
@@ -79,8 +80,8 @@ export default function MovieDetails() {
 
     function onHandleClick(handle, e) {
         const slider = handle.closest(".MovieCastContainer").querySelector(".slider")
-        
-        console.log(e,'eeesdfsf');
+
+        console.log(e, 'eeesdfsf');
 
         const sliderIndex = parseInt(getComputedStyle(slider).getPropertyValue("--slider-index"));
 
@@ -90,16 +91,18 @@ export default function MovieDetails() {
 
             if (sliderIndex <= 0) {
 
-                e.stopImmediatePropagation()
-                slider.style.setProperty("--slider-index", (sliderIndex - 1) * 0)
+                
+                slider.style.setProperty("--slider-index", 0)
 
                 
             }else{
+
                 slider.style.setProperty("--slider-index", sliderIndex - 1)
             }
-
-            console.log('i got clicked')
             
+
+                console.log('i got clicked')
+
         }
 
         if (handle.classList.contains("right-handle")) {
@@ -111,7 +114,7 @@ export default function MovieDetails() {
 
     }
 
-    const castInfo = MovieCast && MovieCast.map(data => <img key={data.id} src={API_image + data.profile_path} alt={data.name} onError={handleOnError} />)
+    //const castInfo = MovieCast && MovieCast.map(data => <img key={data.id} src={API_image + data.profile_path} alt={data.name} onError={handleOnError} />)
 
 
     return (
@@ -126,12 +129,25 @@ export default function MovieDetails() {
                     <div className="text">&#8249;</div>
                 </button>
 
-                <div className='slider'>
+                <div className="slider">
 
                     {
 
-                        castInfo ? castInfo : <div>...Loading</div>
+                        MovieCast && MovieCast.map(Castdata =>
+
+                            <div className='MovieCastdetails'>
+
+                                <img src={API_image + Castdata.profile_path} alt={Castdata.name} style={{ borderRadius: '1rem' }} onError={handleOnError} />
+                                <div style={{ color: 'white' }}>{Castdata.name}</div>
+                                <div style={{ color: 'white' }}><strong>Character</strong> : {Castdata.character}</div>
+
+                            </div>
+
+                        )
+
                     }
+
+
 
                 </div>
 

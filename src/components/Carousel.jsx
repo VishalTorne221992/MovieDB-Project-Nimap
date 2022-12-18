@@ -2,6 +2,7 @@ import React from 'react'
 import '../carousel.css'
 import errimg from '../assets/prwimg.png';
 
+
 export default function Carousel({name, profile_path}) {
 
   const API_image = 'https://image.tmdb.org/t/p/w500/';
