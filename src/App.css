@@ -179,7 +179,7 @@ img {
 
 }
 
-@media screen and (min-width: 321px) and (max-width: 425px) {
+@media screen and (min-width: 321px) and (max-width: 360px) {
 
   body{
     overflow: scroll;
@@ -206,7 +206,7 @@ img {
     width: 100%;
     justify-content: flex-start;
     align-items: center;
-    margin: 0px 0px 0px 50px;
+    margin: 0px 0px 0px 0px;
     color: whitesmoke;
     overflow: visible;
     font-size: 0.8rem;
